@@ -162,14 +162,14 @@ public class ExcelToWord {
         return list;
     }
     public static String formatString(String data) {
-        float dataf=Float.parseFloat(data);
+        double dataf=Double.parseDouble(data);
         DecimalFormat df = new DecimalFormat("0.00%");
         return df.format(dataf);
     }
 
     public static String formatString2(String data) {
 
-        float dataf=Float.parseFloat(data);
+        double dataf=Double.parseDouble(data);
         DecimalFormat df = new DecimalFormat("#,###");
         return dataf == 0f ? "-" : df.format(dataf);
     }

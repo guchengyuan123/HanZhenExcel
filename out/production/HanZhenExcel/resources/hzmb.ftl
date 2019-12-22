@@ -1234,7 +1234,7 @@
                             <w:b/>
                             <w:sz-cs w:val="22"/>
                         </w:rPr>
-                        <w:t>In connection with the audit of </w:t>
+                        <w:t>In connection with the audit of</w:t>
                     </w:r>
                     <w:r wsp:rsidR="00057B4C" wsp:rsidRPr="009E6ECC">
                         <w:rPr>
@@ -1280,7 +1280,8 @@
                             <w:b/>
                             <w:sz-cs w:val="22"/>
                         </w:rPr>
-                        <w:t>For any enquiry on the information required in this confirmation request, please contact the engagement manager of Deloitte Touche Tohmatsu Certified Public Accountants LLP:</w:t>
+                        <w:t>For any enquiry on the information required in this confirmation request, please contact the engagement manager of Deloitte Touche Tohmatsu Certified Public Accountants LLP:
+                        </w:t>
                     </w:r>
                 </w:p>
                 <w:p wsp:rsidR="00AF266E" wsp:rsidRPr="009E6ECC" wsp:rsidRDefault="00AF266E" wsp:rsidP="00AF266E">
@@ -1307,7 +1308,7 @@
                             <w:sz-cs w:val="22"/>
                             <w:lang w:fareast="ZH-CN"/>
                         </w:rPr>
-                        <w:t>contact</w:t>
+                        <w:t>contact </w:t>
                     </w:r>
                     <w:r wsp:rsidRPr="009E6ECC">
                         <w:rPr>
@@ -1427,7 +1428,8 @@
                             <w:b/>
                             <w:sz-cs w:val="22"/>
                         </w:rPr>
-                        <w:t>Your prompt attention to this request will be appreciated. If you could please provide the above information to the auditors both via fax and mail, we would truly appreciate it. A self addressed envelope is enclosed for your reply.</w:t>
+                        <w:t>Your prompt attention to this request will be appreciated. If you could please provide the above information to the auditors both via fax and mail, we would truly appreciate it. A self addressed envelope is enclosed for your reply.
+                        </w:t>
                     </w:r>
                 </w:p>
             </wx:sub-section>
