@@ -68,6 +68,13 @@ public class ExcelToWord {
                     dataMap.put("被投资公司地址", list.get(0).getBtzgsdz());
                     dataMap.put("联系人", list.get(0).getLxr());
                     dataMap.put("基金名称", list.get(0).getJjmc());
+                    dataMap.put("批次号", list.get(0).getPch());
+                    dataMap.put("序列号", list.get(0).getXlh());
+                    dataMap.put("索引号", list.get(0).getSyh());
+                    dataMap.put("项目编号", list.get(0).getXmbh());
+                    dataMap.put("年前", "");
+                    dataMap.put("年后", "");
+                    dataMap.put("Commonsshares", "Commons shares");
 
                     for (String type : getTypes()) {
                         if (type.equals("Convertible Promissory note")) {
@@ -77,19 +84,26 @@ public class ExcelToWord {
                                 dataMap.put("可换票计息收入", "");
                             } else {
                                 dataMap.put("可换票投资成本", formatString2(cpn.get(0).getCost()));
-                                dataMap.put("可换票计息收入", formatString2(cpn.get(0).getAi()));
+                                dataMap.put("年前", formatString2(cpn.get(0).getAib()));
+                                dataMap.put("年后", formatString2(cpn.get(0).getAid()));
                             }
                         }
-                        if (type.equals("Common Shares")) {
-                            List<HanZheng> cs = list.stream().filter(o -> o.getTzlx().equals(type)).collect(Collectors.toList());
-                            if (CollectionUtils.isEmpty(cs)) {
+                        if (type.equals("Common Shares") || type.equals("Registered Capital")) {
+                            List<HanZheng> cs = list.stream().filter(o -> o.getTzlx().equals("Common Shares")).collect(Collectors.toList());
+                            List<HanZheng> rc = list.stream().filter(o -> o.getTzlx().equals("Registered Capital")).collect(Collectors.toList());
+                            if (CollectionUtils.isEmpty(cs) && CollectionUtils.isEmpty(rc)) {
                                 dataMap.put("普股数量", "");
                                 dataMap.put("普股持股比例", "");
                                 dataMap.put("普股投资成本", "");
-                            } else {
+                            } else if (CollectionUtils.isNotEmpty(cs) && CollectionUtils.isEmpty(rc)){
                                 dataMap.put("普股数量", formatString2(cs.get(0).getNos()));
                                 dataMap.put("普股持股比例", formatString(cs.get(0).getSp()));
                                 dataMap.put("普股投资成本", formatString2(cs.get(0).getCost()));
+                            } else if (CollectionUtils.isEmpty(cs) && CollectionUtils.isNotEmpty(rc)){
+                                dataMap.put("普股数量", formatString2(rc.get(0).getNos()));
+                                dataMap.put("普股持股比例", formatString(rc.get(0).getSp()));
+                                dataMap.put("普股投资成本", formatString2(rc.get(0).getCost()));
+                                dataMap.put("Commonsshares", "Registered capital");
                             }
                         }
                         if (type.equals("Preferred Shares")) {
@@ -100,10 +114,10 @@ public class ExcelToWord {
                                 dataMap.put("优先股持股比例", "");
                                 dataMap.put("优先股投资成本", "");
                             } else {
-                                dataMap.put("优先股持股数", ps.get(0).getClazz() == null ? "" : formatString2(ps.get(0).getClazz()));
                                 dataMap.put("优先股数量", formatString2(ps.get(0).getNos()));
                                 dataMap.put("优先股持股比例", formatString(ps.get(0).getSp()));
                                 dataMap.put("优先股投资成本", formatString2(ps.get(0).getCost()));
+                                dataMap.put("Commonshares", "Common shares");
                             }
                         }
                         if (type.equals("Warrants")) {
@@ -144,6 +158,7 @@ public class ExcelToWord {
         list.add("Common Shares");
         list.add("Preferred Shares");
         list.add("Warrants");
+        list.add("Registered Capital");
         return list;
     }
     public static String formatString(String data) {

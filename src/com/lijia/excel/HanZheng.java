@@ -37,20 +37,20 @@ public class HanZheng {
     @ExcelField(title = "投资类型", order = 11)
     private String tzlx;
 
-    @ExcelField(title = "Class", order = 12)
-    private String clazz;
-
-    @ExcelField(title = "No. of shares", order = 13)
+    @ExcelField(title = "No. of shares", order = 12)
     private String nos;
 
-    @ExcelField(title = "Share Percentage", order = 14)
+    @ExcelField(title = "Share Percentage", order = 13)
     private String sp;
 
-    @ExcelField(title = "Cost", order = 15)
+    @ExcelField(title = "Cost", order = 14)
     private String cost;
 
-    @ExcelField(title = "Accrued Interest", order = 16)
-    private String ai;
+    @ExcelField(title = "Accrued Interest-Before 2019", order = 15)
+    private String aib;
+
+    @ExcelField(title = "Accrued Interest-During 2019", order = 16)
+    private String aid;
 
     public String getId() {
         return id;
@@ -140,14 +140,6 @@ public class HanZheng {
         this.tzlx = tzlx;
     }
 
-    public String getClazz() {
-        return clazz;
-    }
-
-    public void setClazz(String clazz) {
-        this.clazz = clazz;
-    }
-
     public String getNos() {
         return nos;
     }
@@ -172,11 +164,19 @@ public class HanZheng {
         this.cost = cost;
     }
 
-    public String getAi() {
-        return ai;
+    public String getAib() {
+        return aib;
     }
 
-    public void setAi(String ai) {
-        this.ai = ai;
+    public void setAib(String aib) {
+        this.aib = aib;
+    }
+
+    public String getAid() {
+        return aid;
+    }
+
+    public void setAid(String aid) {
+        this.aid = aid;
     }
 }
