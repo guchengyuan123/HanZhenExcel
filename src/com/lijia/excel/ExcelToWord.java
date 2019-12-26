@@ -74,7 +74,7 @@ public class ExcelToWord {
                     dataMap.put("项目编号", list.get(0).getXmbh());
                     dataMap.put("年前", "");
                     dataMap.put("年后", "");
-                    dataMap.put("Commonsshares", "Commons shares");
+                    dataMap.put("Commonsshares", "Common shares");
 
                     for (String type : getTypes()) {
                         if (type.toLowerCase().equals("Convertible Promissory note".toLowerCase())) {

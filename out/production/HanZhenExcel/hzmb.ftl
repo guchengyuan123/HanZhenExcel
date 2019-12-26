@@ -1234,7 +1234,7 @@
                             <w:b/>
                             <w:sz-cs w:val="22"/>
                         </w:rPr>
-                        <w:t>In connection with the audit of</w:t>
+                        <w:t>In connection with the audit of </w:t>
                     </w:r>
                     <w:r wsp:rsidR="00057B4C" wsp:rsidRPr="009E6ECC">
                         <w:rPr>
@@ -1251,7 +1251,7 @@
                             <w:b/>
                             <w:sz-cs w:val="22"/>
                         </w:rPr>
-                        <w:t> financial statements for the year ended/ending December 31, 2019, please complete the information in Appendix A or provide a broker/custody statement pertaining to our investments and provide directly to our auditors, Audit Confirmation Centre, Address: 12B/F Deloitte Tower, 8 Corporate Avenue, 10 Ruitian Road, Yuzhong District, Attn: Audit Confirmation Centre (tel: 86 (23) 8823 1555, fax: 86 (23) 8859 9288)</w:t>
+                        <w:t> financial statements for the year ended/ending December 31, 2019, please complete the information in Appendix A or provide a broker/custody statement pertaining to our investments and provide directly to our auditors, Audit Confirmation Centre, Address: 12B/F Deloitte Tower, 8 Corporate Avenue, 10 Ruitian Road, Yuzhong District, Chongqing 400043, PRC, Attn: Audit Confirmation Centre (tel: 86 (23) 8823 1555, fax: 86 (23) 8859 9288)</w:t>
                     </w:r>
                 </w:p>
                 <w:p wsp:rsidR="00AF266E" wsp:rsidRPr="009E6ECC" wsp:rsidRDefault="00AF266E" wsp:rsidP="00AF266E">
@@ -1280,7 +1280,7 @@
                             <w:b/>
                             <w:sz-cs w:val="22"/>
                         </w:rPr>
-                        <w:t>For any enquiry on the information required in this confirmation request, please contact the engagement manager of Deloitte Touche Tohmatsu Certified Public Accountants LLP:
+                        <w:t>For any enquiry on the information required in this confirmation request, please contact the engagement member of Deloitte Touche Tohmatsu Certified Public Accountants LLP:
                         </w:t>
                     </w:r>
                 </w:p>
@@ -1428,7 +1428,7 @@
                             <w:b/>
                             <w:sz-cs w:val="22"/>
                         </w:rPr>
-                        <w:t>Your prompt attention to this request will be appreciated. If you could please provide the above information to the auditors both via fax and mail, we would truly appreciate it. A self addressed envelope is enclosed for your reply.
+                        <w:t>Your prompt attention to this request will be appreciated. If you could please provide the above information to the auditors both via fax and mail, we would truly appreciate it.
                         </w:t>
                     </w:r>
                 </w:p>
@@ -1523,7 +1523,7 @@
                             <w:sz-cs w:val="22"/>
                             <w:lang w:fareast="ZH-CN"/>
                         </w:rPr>
-                        <w:t>日本基金持有贵公司股份之数量，并直接向本基金之审计师德勤华永会计师事务所</w:t>
+                        <w:t>日本基金持有贵公司股份之数量、比例及金额，并直接向本基金之审计师德勤华永会计师事务所</w:t>
                     </w:r>
                     <w:r wsp:rsidRPr="009E6ECC">
                         <w:rPr>
@@ -1632,7 +1632,7 @@
                             <w:sz-cs w:val="22"/>
                             <w:lang w:fareast="ZH-CN"/>
                         </w:rPr>
-                        <w:t>日本公司之股份数量是否正确。</w:t>
+                        <w:t>日本公司之股份数量、比例及金额是否正确。</w:t>
                     </w:r>
                 </w:p>
             </wx:sub-section>
@@ -2033,6 +2033,17 @@
                         </w:rPr>
                     </w:pPr>
                 </w:p>
+                <w:p wsp:rsidR="00B37CC4" wsp:rsidRPr="009E6ECC" wsp:rsidRDefault="00B37CC4" wsp:rsidP="00AF266E">
+                    <w:pPr>
+                        <w:pStyle w:val="a9"/>
+                        <w:spacing w:after="0"/>
+                        <w:ind w:left="576"/>
+                        <w:rPr>
+                            <w:b/>
+                            <w:sz-cs w:val="22"/>
+                        </w:rPr>
+                    </w:pPr>
+                </w:p>
                 <w:p wsp:rsidR="00AF266E" wsp:rsidRPr="009E6ECC" wsp:rsidRDefault="00AF266E" wsp:rsidP="00AF266E">
                     <w:pPr>
                         <w:pStyle w:val="a9"/>
@@ -2096,7 +2107,7 @@
                             <w:sz w:val="24"/>
                             <w:sz-cs w:val="22"/>
                         </w:rPr>
-                        <w:t>ease check here and sign below</w:t>
+                        <w:t>ease check here and sign below </w:t>
                     </w:r>
                     <w:r wsp:rsidR="003978ED" wsp:rsidRPr="009E6ECC">
                         <w:rPr>
