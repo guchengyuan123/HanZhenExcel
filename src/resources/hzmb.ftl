@@ -2033,17 +2033,6 @@
                         </w:rPr>
                     </w:pPr>
                 </w:p>
-                <w:p wsp:rsidR="00B37CC4" wsp:rsidRPr="009E6ECC" wsp:rsidRDefault="00B37CC4" wsp:rsidP="00AF266E">
-                    <w:pPr>
-                        <w:pStyle w:val="a9"/>
-                        <w:spacing w:after="0"/>
-                        <w:ind w:left="576"/>
-                        <w:rPr>
-                            <w:b/>
-                            <w:sz-cs w:val="22"/>
-                        </w:rPr>
-                    </w:pPr>
-                </w:p>
                 <w:p wsp:rsidR="00AF266E" wsp:rsidRPr="009E6ECC" wsp:rsidRDefault="00AF266E" wsp:rsidP="00AF266E">
                     <w:pPr>
                         <w:pStyle w:val="a9"/>
@@ -2982,7 +2971,7 @@
                                         <w:sz w:val="20"/>
                                         <w:lang w:fareast="ZH-CN"/>
                                     </w:rPr>
-                                    <w:t>普通股</w:t>
+                                    <w:t>${普通股}</w:t>
                                 </w:r>
                             </w:p>
                         </w:tc>

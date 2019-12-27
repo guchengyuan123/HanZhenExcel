@@ -75,6 +75,7 @@ public class ExcelToWord {
                     dataMap.put("年前", "");
                     dataMap.put("年后", "");
                     dataMap.put("Commonsshares", "Common shares");
+                    dataMap.put("普通股", "普通股");
 
                     for (String type : getTypes()) {
                         if (type.toLowerCase().equals("Convertible Promissory note".toLowerCase())) {
@@ -104,6 +105,7 @@ public class ExcelToWord {
                                 dataMap.put("普股持股比例", formatString(rc.get(0).getSp()));
                                 dataMap.put("普股投资成本", "$"+formatString2(rc.get(0).getCost()));
                                 dataMap.put("Commonsshares", "Registered capital");
+                                dataMap.put("普通股", "注册资本");
                             }
                         }
                         if (type.toLowerCase().equals("Preferred Shares".toLowerCase())) {
@@ -162,6 +164,9 @@ public class ExcelToWord {
         return list;
     }
     public static String formatString(String data) {
+        if (data == null || data.length() < 1) {
+            return "";
+        }
         double dataf=Double.parseDouble(data);
         DecimalFormat df = new DecimalFormat("0.00%");
         return df.format(dataf);
